@@ -1,4 +1,4 @@
-# 🌾 Crop Health Monitoring (NDVI + ML)
+# Crop Health Monitoring (NDVI + ML)
 
 This project uses Sentinel-2 satellite data to analyze crop health using NDVI and Machine Learning.
 
