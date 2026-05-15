@@ -61,7 +61,7 @@ model = RandomForestClassifier(n_estimators=50)
 model.fit(X_train, y_train)
 
 
-# STEP 10: Accuracy
+#  Accuracy
 
 pred = model.predict(X_test)
 accuracy = accuracy_score(y_test, pred)
@@ -73,14 +73,14 @@ print("Model Accuracy:", accuracy)
 prediction_full = model.predict(X_full)
 prediction_map = prediction_full.reshape(ndvi.shape)
 
-#  Show prediction map
+#  Shows prediction map
 
 plt.imshow(prediction_map, cmap='RdYlGn')
 plt.title("Crop Health Prediction (ML Output)")
 plt.show()
 
 
-#  Save outputs
+#  Saved outputs
 
 plt.imsave("ndvi_output.png", ndvi, cmap='RdYlGn')
 plt.imsave("prediction_output.png", prediction_map, cmap='RdYlGn')
